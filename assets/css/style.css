@@ -1,0 +1,396 @@
+html {
+    font-size: 10px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    direction: ltr;
+    background-color: #34363a;
+    color: #bbb;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+    color: #bbb;
+    transition: all 0.3s;
+}
+a:hover {
+    color: #fff;
+}
+ul, li {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+.container {
+    width: 100%;
+    padding: 0 40px;
+}
+.bg-gray {
+    background-color: #494b50;
+}
+.btn {
+    background-color: #fff;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+}
+.btn:hover {
+    color: #bbb;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 100px;
+}
+.column-1 {
+    width: 8.33%;
+}
+.column-2 {
+    width: 16.66%;
+}
+.column-3 {
+    width: 25%;
+}
+.column-4 {
+    width: 33.33%;
+}
+.column-5 {
+    width: 41.66%;
+}
+.column-6 {
+    width: 50%;
+}
+.column-7 {
+    width: 58.33%;
+}
+.column-8 {
+    width: 66.66%;
+}
+.column-9 {
+    width: 75%;
+}
+.column-10 {
+    width: 83.33%;
+}
+.column-11 {
+    width: 91.66%;
+}
+.column-12 {
+    width: 100%;
+}
+.pt-35px {
+    padding-top: 50px;
+}
+.pb-35px {
+    padding-bottom: 50px;
+}
+.ptb-50px {
+    padding: 50px 0;
+}
+.section-bottom-border-space {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 25px;
+    margin-bottom: 27px;
+}
+.section-title {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 25px;
+    padding-bottom: 50px;
+}
+.left-sidebar {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.left-sidebar .left-sidebar__inner {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.left-sidebar .left-sidebar__inner .left-sidebar__logo h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+.left-sidebar .left-sidebar__inner .left-sidebar__menu ul li a {
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 1px 25px 1px 0;
+    line-height: 20px;
+}
+.left-sidebar .left-sidebar__inner .left-sidebar__copyright p {
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+.right-sidebar {
+    padding-left: 450px;
+    min-height: 100vh;
+    /* display: flex;
+    align-items: center; */
+}
+.right-sidebar .home-content {
+    display: flex;
+    align-items: center;
+}
+.right-sidebar .home-content .avatar .avatar__profile {
+    background-image: url('../images/person.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.right-sidebar .home-content .persona {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 25px;
+}
+.right-sidebar .home-content .persona .persona__fullname {
+    font-size: 2rem;
+    color: #fff;
+}
+.right-sidebar .home-content .persona .persona__description {
+    font-size: 1.5rem;
+}
+.right-sidebar .home-content .persona .persona__social-media ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.right-sidebar .home-content .persona .persona__social-media ul li a i{
+    display: block;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.right-sidebar .page-content .bread-crumb span {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: rgba(255, 255, 255, 0.04);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.right-sidebar .page-content .page-title {
+    color: #fff;
+    font-size: 3rem;
+}
+.right-sidebar .biography .main-picture img {
+    width: 100%;
+    height: auto;
+}
+.right-sidebar .biography .author-info__fullname {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+.right-sidebar .biography .author-info__career {
+    font-size: 1.2rem;
+}
+.right-sidebar .biography .author-description p {
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.right-sidebar .biography .author-details ul li {
+    font-size: 1.2rem;
+}
+.right-sidebar .biography .author-details ul li span:nth-child(1) {
+    display: inline-block;
+    width: 20%;
+    font-weight: bold;
+    color: #fff;
+}
+.right-sidebar .skills__info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+    position: relative;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.right-sidebar .skills__info ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #494b50;
+}
+.right-sidebar .skills__info .programming-skills ul li:nth-child(1):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: 2px;
+    background-color: #fff;
+}
+.right-sidebar .skills__info .programming-skills ul li:nth-child(2):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+}
+.right-sidebar .skills__info .programming-skills ul li:nth-child(3):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 2px;
+    background-color: #fff;
+}
+.right-sidebar .skills__info .language-skills ul li:nth-child(1):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 2px;
+    background-color: #fff;
+}
+.right-sidebar .skills__info .language-skills ul li:nth-child(2):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: 2px;
+    background-color: #fff;
+}
+.right-sidebar .skills__info .language-skills ul li:nth-child(3):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 85%;
+    height: 2px;
+    background-color: #fff;
+}
+.abilities ul li {
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+.abilities ul li i {
+    color: #fff;
+    padding-right: 5px;
+}
+.timeline ul {
+    padding-left: 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+.timeline ul li {
+    padding: 10px 0;
+    position: relative;
+}
+.timeline ul li::before {
+    content: "";
+    position: absolute;
+    left: -29px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-color: #494b50;
+}
+.timeline ul li .date span {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px 25px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+}
+.timeline ul li .affiliation span {
+    display: block;
+    line-height: 20px;
+}
+.timeline ul li .affiliation .key {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.timeline ul li .affiliation .value {
+    font-size: 1.2rem;
+}
+.testimonial .testimonial-content .comment {
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+.testimonial .testimonial-content .comment::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid rgba(255, 255, 255, 0.1);
+    border-top: 10px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 3%;
+    bottom: -12%;
+}
+.testimonial .testimonial-content .comment::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #34363a;
+    border-top: 10px solid #34363a;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 3.8%;
+    bottom: -9%;
+}
+.testimonial .person {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.testimonial .person .profile-image img {
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+}
+.testimonial .person .person-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    padding: 20px 0;
+}
+.testimonial .person .person-info .person__fullname {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+}
+.testimonial .person .person-info .person__position {
+    font-size: 1.1rem;
+}
